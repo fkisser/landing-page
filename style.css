@@ -1,0 +1,70 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --oscuro: #333533;
+    --gris: #B8B8B7;
+    --claro: #F6F8F2;
+    --primario: #F5CB5C;
+    --secundario: #698C7A;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* NAVBAR */
+.barra{
+    background-color: var(--oscuro);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 1rem;;
+}
+
+.logo{
+    height: 5rem;
+    width: 8rem;
+    background-image: url(/img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0.5rem 0;
+}
+.navegacion{
+    display: flex;
+    column-gap: 1.5rem;
+}
+.navegacion__enlace{
+    font-family: 'PT Sans';
+    font-weight: 800;
+    color: #F6F8F2;
+}
+.navegacion__enlace:hover{
+    color: #698C7A;
+}
+.navegacion__enlace--selected{
+    color:#F5CB5C;
+}
